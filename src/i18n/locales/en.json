@@ -1,0 +1,286 @@
+{
+  "app": {
+    "title": "Expense Tracker",
+    "description": "Track and manage your expenses"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "invalidCredentials": "Invalid email or password",
+    "signInError": "Failed to sign in",
+    "signInSuccess": "Signed in successfully",
+    "signUpError": "Failed to sign up",
+    "signUpSuccess": "Signed up successfully"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "create": "Create",
+    "view": "View",
+    "back": "Back",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "confirmDelete": "Are you sure you want to delete this?",
+    "yes": "Yes",
+    "no": "No",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "download": "Download",
+    "upload": "Upload",
+    "close": "Close",
+    "pagination": "{{start}}-{{end}} of {{total}} items"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "projects": "Projects",
+    "settings": "Settings",
+    "users": "User Management",
+    "roles": "Role Management",
+    "pettyCash": {
+      "main": "Petty Cash",
+      "dashboard": "Dashboard",
+      "funds": "Funds",
+      "transactions": "Transactions",
+      "reconciliations": "Reconciliations",
+      "settings": "Settings"
+    }
+  },
+  "dashboard": {
+    "highValueTransactions": "High Value Transactions",
+    "recentTransactions": "Recent Transactions",
+    "topProjects": "Top Projects by Spending"
+  },
+  "transactions": {
+    "title": "Transactions",
+    "new": "New Transaction",
+    "edit": "Edit Transaction",
+    "amount": "Amount",
+    "amountPlaceholder": "Enter amount",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter description",
+    "category": "Category",
+    "department": "Department",
+    "project": "Project",
+    "attachments": "Attachments",
+    "uploadFiles": "Upload Files",
+    "type": "Transaction Type",
+    "types": {
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "categories": {
+      "supplies": "Supplies",
+      "equipment": "Equipment",
+      "maintenance": "Maintenance",
+      "utilities": "Utilities",
+      "other": "Other"
+    },
+    "departments": {
+      "warehouse": "Warehouse",
+      "office": "Office"
+    },
+    "summary": {
+      "totalBalance": "Total Balance",
+      "totalExpenses": "Total Expenses",
+      "totalIncome": "Total Income",
+      "transactionCount": "Number of Transactions"
+    },
+    "table": {
+      "date": "Date",
+      "description": "Description",
+      "amount": "Amount ({{currency}})",
+      "category": "Category",
+      "department": "Department"
+    },
+    "export": {
+      "csv": "Export to CSV",
+      "pdf": "Export to PDF"
+    },
+    "import": {
+      "title": "Import Excel",
+      "success": "Transactions imported successfully",
+      "error": "Failed to import transactions"
+    },
+    "addSuccess": "Transaction added successfully",
+    "addError": "Failed to add transaction",
+    "updateSuccess": "Transaction updated successfully",
+    "updateError": "Failed to update transaction",
+    "deleteSuccess": "Transaction deleted successfully",
+    "deleteError": "Failed to delete transaction"
+  },
+  "projects": {
+    "title": "Projects",
+    "new": "New Project",
+    "edit": "Edit Project",
+    "name": "Project Name",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter project description",
+    "budget": "Budget",
+    "spent": "Spent",
+    "remaining": "Remaining",
+    "progress": "Progress",
+    "budgetUsage": "Budget Usage",
+    "transactions": "Project Transactions",
+    "select": "Select project (optional)",
+    "untitled": "Untitled Project",
+    "statuses": {
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "unknown": "Unknown"
+    },
+    "addSuccess": "Project created successfully",
+    "addError": "Failed to create project",
+    "updateSuccess": "Project updated successfully",
+    "updateError": "Failed to update project",
+    "deleteSuccess": "Project deleted successfully",
+    "deleteError": "Failed to delete project"
+  },
+  "settings": {
+    "title": "Settings",
+    "general": {
+      "title": "General Settings"
+    },
+    "translations": {
+      "title": "Translation Management",
+      "key": "Translation Key",
+      "add": "Add Translation",
+      "edit": "Edit Translation",
+      "keyRequired": "Translation key is required",
+      "valueRequired": "Translation value is required",
+      "saveSuccess": "Translation saved successfully",
+      "saveError": "Failed to save translation",
+      "deleteSuccess": "Translation deleted successfully",
+      "deleteError": "Failed to delete translation",
+      "search": "Search translations..."
+    },
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "language": {
+      "title": "Language",
+      "en": "English",
+      "fr": "French"
+    },
+    "currency": {
+      "title": "Currency",
+      "USD": "US Dollar",
+      "EUR": "Euro",
+      "GBP": "British Pound",
+      "JPY": "Japanese Yen",
+      "XOF": "West African CFA"
+    }
+  },
+  "pettyCash": {
+    "dashboard": {
+      "title": "Petty Cash Dashboard",
+      "totalBalance": "Total Balance",
+      "activeFunds": "Active Funds",
+      "totalTransactions": "Total Transactions",
+      "pendingReconciliations": "Pending Reconciliations",
+      "lastReconciliation": "Last Reconciliation",
+      "quickActions": "Quick Actions",
+      "systemStatus": "System Status",
+      "recordTransaction": "Record Transaction",
+      "performReconciliation": "Perform Reconciliation",
+      "manageFunds": "Manage Funds"
+    },
+    "funds": {
+      "title": "Petty Cash Funds",
+      "new": "New Fund",
+      "edit": "Edit Fund",
+      "name": "Fund Name",
+      "initialBalance": "Initial Balance",
+      "currentBalance": "Current Balance",
+      "custodian": "Custodian",
+      "department": "Department",
+      "status": "Status",
+      "transactions": "Transactions",
+      "reconciliations": "Reconciliations",
+      "statuses": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "messages": {
+        "addSuccess": "Fund created successfully",
+        "addError": "Failed to create fund",
+        "updateSuccess": "Fund updated successfully",
+        "updateError": "Failed to update fund",
+        "deleteSuccess": "Fund deleted successfully",
+        "deleteError": "Failed to delete fund"
+      }
+    },
+    "transactions": {
+      "title": "Petty Cash Transactions",
+      "new": "New Transaction",
+      "edit": "Edit Transaction",
+      "amount": "Amount",
+      "type": "Type",
+      "description": "Description",
+      "receiptNumber": "Receipt Number",
+      "category": "Category",
+      "types": {
+        "replenishment": "Replenishment",
+        "expense": "Expense"
+      },
+      "categories": {
+        "officeSupplies": "Office Supplies",
+        "transportation": "Transportation",
+        "meals": "Meals",
+        "maintenance": "Maintenance",
+        "other": "Other"
+      },
+      "messages": {
+        "addSuccess": "Transaction recorded successfully",
+        "addError": "Failed to record transaction",
+        "updateSuccess": "Transaction updated successfully",
+        "updateError": "Failed to update transaction",
+        "deleteSuccess": "Transaction deleted successfully",
+        "deleteError": "Failed to delete transaction"
+      }
+    },
+    "reconciliations": {
+      "title": "Reconciliations",
+      "new": "New Reconciliation",
+      "physicalCount": "Physical Count",
+      "systemBalance": "System Balance",
+      "difference": "Difference",
+      "notes": "Notes",
+      "status": "Status",
+      "reconciledBy": "Reconciled By",
+      "statuses": {
+        "pending": "Pending",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "messages": {
+        "addSuccess": "Reconciliation recorded successfully",
+        "addError": "Failed to record reconciliation",
+        "updateSuccess": "Reconciliation updated successfully",
+        "updateError": "Failed to update reconciliation",
+        "approveSuccess": "Reconciliation approved successfully",
+        "approveError": "Failed to approve reconciliation",
+        "rejectSuccess": "Reconciliation rejected successfully",
+        "rejectError": "Failed to reject reconciliation"
+      }
+    }
+  }
+}

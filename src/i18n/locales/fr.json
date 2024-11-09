@@ -1,0 +1,286 @@
+{
+  "app": {
+    "title": "Gestionnaire de dépenses",
+    "description": "Suivez et gérez vos dépenses"
+  },
+  "auth": {
+    "signIn": "Connexion",
+    "signUp": "Inscription",
+    "signOut": "Déconnexion",
+    "email": "Email",
+    "emailPlaceholder": "Entrez votre email",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "fullName": "Nom complet",
+    "fullNamePlaceholder": "Entrez votre nom complet",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "hasAccount": "Vous avez déjà un compte ?",
+    "invalidCredentials": "Email ou mot de passe invalide",
+    "signInError": "Échec de la connexion",
+    "signInSuccess": "Connexion réussie",
+    "signUpError": "Échec de l'inscription",
+    "signUpSuccess": "Inscription réussie"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "success": "Succès",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "create": "Créer",
+    "view": "Voir",
+    "back": "Retour",
+    "actions": "Actions",
+    "confirm": "Confirmer",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ceci ?",
+    "yes": "Oui",
+    "no": "Non",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "download": "Télécharger",
+    "upload": "Téléverser",
+    "close": "Fermer",
+    "pagination": "{{start}}-{{end}} sur {{total}} éléments"
+  },
+  "navigation": {
+    "dashboard": "Tableau de bord",
+    "transactions": "Transactions",
+    "projects": "Projets",
+    "settings": "Paramètres",
+    "users": "Gestion des utilisateurs",
+    "roles": "Gestion des rôles",
+    "pettyCash": {
+      "main": "Petite caisse",
+      "dashboard": "Tableau de bord",
+      "funds": "Fonds",
+      "transactions": "Transactions",
+      "reconciliations": "Rapprochements",
+      "settings": "Paramètres"
+    }
+  },
+  "dashboard": {
+    "highValueTransactions": "Transactions importantes",
+    "recentTransactions": "Transactions récentes",
+    "topProjects": "Projets les plus dépensiers"
+  },
+  "transactions": {
+    "title": "Transactions",
+    "new": "Nouvelle transaction",
+    "edit": "Modifier la transaction",
+    "amount": "Montant",
+    "amountPlaceholder": "Entrez le montant",
+    "description": "Description",
+    "descriptionPlaceholder": "Entrez la description",
+    "category": "Catégorie",
+    "department": "Département",
+    "project": "Projet",
+    "attachments": "Pièces jointes",
+    "uploadFiles": "Téléverser des fichiers",
+    "type": "Type de transaction",
+    "types": {
+      "income": "Revenu",
+      "expense": "Dépense"
+    },
+    "categories": {
+      "supplies": "Fournitures",
+      "equipment": "Équipement",
+      "maintenance": "Maintenance",
+      "utilities": "Services publics",
+      "other": "Autre"
+    },
+    "departments": {
+      "warehouse": "Entrepôt",
+      "office": "Bureau"
+    },
+    "summary": {
+      "totalBalance": "Solde total",
+      "totalExpenses": "Dépenses totales",
+      "totalIncome": "Revenus totaux",
+      "transactionCount": "Nombre de transactions"
+    },
+    "table": {
+      "date": "Date",
+      "description": "Description",
+      "amount": "Montant ({{currency}})",
+      "category": "Catégorie",
+      "department": "Département"
+    },
+    "export": {
+      "csv": "Exporter en CSV",
+      "pdf": "Exporter en PDF"
+    },
+    "import": {
+      "title": "Importer Excel",
+      "success": "Transactions importées avec succès",
+      "error": "Échec de l'importation des transactions"
+    },
+    "addSuccess": "Transaction ajoutée avec succès",
+    "addError": "Échec de l'ajout de la transaction",
+    "updateSuccess": "Transaction mise à jour avec succès",
+    "updateError": "Échec de la mise à jour de la transaction",
+    "deleteSuccess": "Transaction supprimée avec succès",
+    "deleteError": "Échec de la suppression de la transaction"
+  },
+  "projects": {
+    "title": "Projets",
+    "new": "Nouveau projet",
+    "edit": "Modifier le projet",
+    "name": "Nom du projet",
+    "description": "Description",
+    "descriptionPlaceholder": "Entrez la description du projet",
+    "budget": "Budget",
+    "spent": "Dépensé",
+    "remaining": "Restant",
+    "progress": "Progression",
+    "budgetUsage": "Utilisation du budget",
+    "transactions": "Transactions du projet",
+    "select": "Sélectionner un projet (optionnel)",
+    "untitled": "Projet sans titre",
+    "statuses": {
+      "active": "Actif",
+      "completed": "Terminé",
+      "cancelled": "Annulé",
+      "unknown": "Inconnu"
+    },
+    "addSuccess": "Projet créé avec succès",
+    "addError": "Échec de la création du projet",
+    "updateSuccess": "Projet mis à jour avec succès",
+    "updateError": "Échec de la mise à jour du projet",
+    "deleteSuccess": "Projet supprimé avec succès",
+    "deleteError": "Échec de la suppression du projet"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "general": {
+      "title": "Paramètres généraux"
+    },
+    "translations": {
+      "title": "Gestion des traductions",
+      "key": "Clé de traduction",
+      "add": "Ajouter une traduction",
+      "edit": "Modifier la traduction",
+      "keyRequired": "La clé de traduction est requise",
+      "valueRequired": "La valeur de traduction est requise",
+      "saveSuccess": "Traduction enregistrée avec succès",
+      "saveError": "Échec de l'enregistrement de la traduction",
+      "deleteSuccess": "Traduction supprimée avec succès",
+      "deleteError": "Échec de la suppression de la traduction",
+      "search": "Rechercher des traductions..."
+    },
+    "theme": {
+      "title": "Thème",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "language": {
+      "title": "Langue",
+      "en": "Anglais",
+      "fr": "Français"
+    },
+    "currency": {
+      "title": "Devise",
+      "USD": "Dollar américain",
+      "EUR": "Euro",
+      "GBP": "Livre sterling",
+      "JPY": "Yen japonais",
+      "XOF": "Franc CFA"
+    }
+  },
+  "pettyCash": {
+    "dashboard": {
+      "title": "Tableau de bord de la petite caisse",
+      "totalBalance": "Solde total",
+      "activeFunds": "Fonds actifs",
+      "totalTransactions": "Total des transactions",
+      "pendingReconciliations": "Rapprochements en attente",
+      "lastReconciliation": "Dernier rapprochement",
+      "quickActions": "Actions rapides",
+      "systemStatus": "État du système",
+      "recordTransaction": "Enregistrer une transaction",
+      "performReconciliation": "Effectuer un rapprochement",
+      "manageFunds": "Gérer les fonds"
+    },
+    "funds": {
+      "title": "Fonds de petite caisse",
+      "new": "Nouveau fonds",
+      "edit": "Modifier le fonds",
+      "name": "Nom du fonds",
+      "initialBalance": "Solde initial",
+      "currentBalance": "Solde actuel",
+      "custodian": "Gestionnaire",
+      "department": "Département",
+      "status": "Statut",
+      "transactions": "Transactions",
+      "reconciliations": "Rapprochements",
+      "statuses": {
+        "active": "Actif",
+        "inactive": "Inactif"
+      },
+      "messages": {
+        "addSuccess": "Fonds créé avec succès",
+        "addError": "Échec de la création du fonds",
+        "updateSuccess": "Fonds mis à jour avec succès",
+        "updateError": "Échec de la mise à jour du fonds",
+        "deleteSuccess": "Fonds supprimé avec succès",
+        "deleteError": "Échec de la suppression du fonds"
+      }
+    },
+    "transactions": {
+      "title": "Transactions de petite caisse",
+      "new": "Nouvelle transaction",
+      "edit": "Modifier la transaction",
+      "amount": "Montant",
+      "type": "Type",
+      "description": "Description",
+      "receiptNumber": "Numéro de reçu",
+      "category": "Catégorie",
+      "types": {
+        "replenishment": "Réapprovisionnement",
+        "expense": "Dépense"
+      },
+      "categories": {
+        "officeSupplies": "Fournitures de bureau",
+        "transportation": "Transport",
+        "meals": "Repas",
+        "maintenance": "Maintenance",
+        "other": "Autre"
+      },
+      "messages": {
+        "addSuccess": "Transaction enregistrée avec succès",
+        "addError": "Échec de l'enregistrement de la transaction",
+        "updateSuccess": "Transaction mise à jour avec succès",
+        "updateError": "Échec de la mise à jour de la transaction",
+        "deleteSuccess": "Transaction supprimée avec succès",
+        "deleteError": "Échec de la suppression de la transaction"
+      }
+    },
+    "reconciliations": {
+      "title": "Rapprochements",
+      "new": "Nouveau rapprochement",
+      "physicalCount": "Comptage physique",
+      "systemBalance": "Solde système",
+      "difference": "Différence",
+      "notes": "Notes",
+      "status": "Statut",
+      "reconciledBy": "Rapproché par",
+      "statuses": {
+        "pending": "En attente",
+        "approved": "Approuvé",
+        "rejected": "Rejeté"
+      },
+      "messages": {
+        "addSuccess": "Rapprochement enregistré avec succès",
+        "addError": "Échec de l'enregistrement du rapprochement",
+        "updateSuccess": "Rapprochement mis à jour avec succès",
+        "updateError": "Échec de la mise à jour du rapprochement",
+        "approveSuccess": "Rapprochement approuvé avec succès",
+        "approveError": "Échec de l'approbation du rapprochement",
+        "rejectSuccess": "Rapprochement rejeté avec succès",
+        "rejectError": "Échec du rejet du rapprochement"
+      }
+    }
+  }
+}
