@@ -1,67 +1,82 @@
-import React from 'react';
-import { TabBar } from 'antd-mobile';
-import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+// src/components/layout/MobileLayout.tsx
+import React from "react";
+import { TabBar, SpinLoading } from "antd-mobile";
+import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import {
   AppOutline,
   UnorderedListOutline,
   UserOutline,
   SetOutline,
   BillOutline,
-} from 'antd-mobile-icons';
-import { usePermissions } from '../../hooks/usePermissions';
-import { useTheme } from '../../context/ThemeContext';
+} from "antd-mobile-icons";
+import { usePermissions } from "../../hooks/usePermissions";
+import { useTheme } from "../../context/ThemeContext";
 
-export function MobileLayout() {
+export const MobileLayout: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { hasRole } = usePermissions();
+  const { hasRole, isLoading } = usePermissions();
   const { isDark } = useTheme();
+
+  if (isLoading) {
+    return (
+      <div className="h-screen w-screen flex items-center justify-center">
+        <SpinLoading color="primary" />
+      </div>
+    );
+  }
 
   const tabs = [
     {
-      key: '/dashboard',
-      title: 'Dashboard',
+      key: "/dashboard",
+      title: "Dashboard",
       icon: <AppOutline />,
     },
     {
-      key: '/transactions',
-      title: 'Transactions',
+      key: "/transactions",
+      title: "Transactions",
       icon: <BillOutline />,
     },
     {
-      key: '/projects',
-      title: 'Projects',
+      key: "/projects",
+      title: "Projects",
       icon: <UnorderedListOutline />,
     },
-    hasRole('admin') && {
-      key: '/users',
-      title: 'Users',
-      icon: <UserOutline />,
-    },
+    ...(hasRole("admin")
+      ? [
+          {
+            key: "/users",
+            title: "Users",
+            icon: <UserOutline />,
+          },
+        ]
+      : []),
     {
-      key: '/settings',
-      title: 'Settings',
+      key: "/settings",
+      title: "Settings",
       icon: <SetOutline />,
     },
-  ].filter(Boolean);
+  ];
 
   return (
-    <div className={`min-h-screen ${isDark ? 'dark bg-[#141414]' : 'bg-gray-50'}`}>
+    <div
+      className={`min-h-screen ${isDark ? "dark bg-[#141414]" : "bg-gray-50"}`}
+    >
       <div className="pb-12">
         <Outlet />
       </div>
       <TabBar
         activeKey={location.pathname}
-        onChange={value => navigate(value)}
+        onChange={(value: string) => navigate(value)}
         className="fixed bottom-0 w-full border-t border-gray-200 dark:border-gray-800"
         style={{
-          backgroundColor: isDark ? '#141414' : '#fff',
+          backgroundColor: isDark ? "#141414" : "#fff",
         }}
       >
-        {tabs.map(item => (
+        {tabs.map((item) => (
           <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
         ))}
       </TabBar>
     </div>
   );
-}
+};
